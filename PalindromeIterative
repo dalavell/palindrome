@@ -10,7 +10,7 @@ public class PalindromeTest{
         for (int i = 0; i < mid ; i++){ 
             // returning false if the characters don't match
             // convert to all lower case to ignore case
-            if (p.toLowerCase.charAt(i) != p.toLowerCase.charAt(p.length()-1-i)){
+            if (p.toLowerCase().charAt(i) != p.toLowerCase().charAt(p.length()-1-i)){
                 return false;
             }
         }
