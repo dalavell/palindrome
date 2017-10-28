@@ -1,0 +1,39 @@
+//testing different palindrome testing algorithms
+
+public class PalindromeTest{
+     
+    public static Boolean palindromeIterative(String p){
+        
+        int mid = (p.length()-1)/2; //goes to middle character of odd length string and lower middle of even length string
+        
+        //only needs to go through half the String 
+        for (int i = 0; i < mid ; i++){ 
+            // returning false if the characters don't match
+            // convert to all lower case to ignore case
+            if (p.toLowerCase.charAt(i) != p.toLowerCase.charAt(p.length()-1-i)){
+                return false;
+            }
+        }
+        //String is a palindrome
+        return true;
+     }
+     
+     
+     public static void main(String[] args){
+     
+         String a = "anna";
+         String b = "karen";
+         
+         System.out.printf("The string %s is a palindrome? %s%n", a, palindromeIterative(a));
+         System.out.printf("The string %s is a palindrome? %s%n", b, palindromeIterative(b));
+         
+     }
+}
+         
+         
+     
+     
+                
+        
+     
+     
